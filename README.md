@@ -622,9 +622,6 @@ access_rights.py -a FULL -c config1 --n4 10.1.1.0/24 -u user1              # on 
 
 ## Not a BAM command
 
-### run_all_tests.py
-The self-cleaning test harness for this whole toolkit — runs the full add/query/update/delete lifecycle against a live BAM server. See its own header docstring for usage (`--list`, `--yes`, `--dry-run`, `--only`, `--keep`, `--timeout`).
-
 ### BAM.py / cli.py / log.py / password.py
 Shared library modules imported by every script above (the v2 API shim, shared CLI helpers, logging, and password encode/decode). Not invoked directly.
 
