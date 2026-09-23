@@ -47,3 +47,7 @@ In BAM, create a API user with correct access right.
 	Password is encrypted as: bXlfcGFzc3dvcmQ=
 	
 	Please update your encrypted api user password in bamconfig.json file
+
+# API version
+   These script was orignially developed by BAM v1 API<br>
+   All scripts has been converted to BAM v2 API in BAM.py.<br>
