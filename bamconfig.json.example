@@ -1,0 +1,17 @@
+{ "sshuser"              : "bluecat",
+  "hostname"             : "bam.example.corp",
+  "user"                 : "api",
+  "password"             : "REPLACE_WITH_ENCRYPTED_PASSWORD",
+  "password_encrypt"     : "true",
+  "https"                : "false",
+  "bdds-name"            : "dds1",
+  "config-name"          : "config1",
+  "view-name"            : ["view1"],
+  "rpz-block-zone"       : "block.rpz.corp",
+  "rpz-redirect-zone"    : "redirect.rpz.corp",
+  "rpz-blackhole-zone"    : "blackhole.rpz.corp",
+  "rpz-whitelist-zone"    : "whitelist.rpz.corp",
+  "external-host-record" : "to.rpz.corp",
+  "add-flag" : [ "add", "new"],
+  "delete-flag" : [ "delete", "del"]
+}
