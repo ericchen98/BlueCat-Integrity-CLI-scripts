@@ -619,6 +619,8 @@ access_rights.py -a FULL -c config1 --n4 10.1.1.0/24 -u user1              # on 
 - `-a [HIDE|VIEW|ADD|CHANGE|FULL]` add/update ACL, `-r` remove ACL, `--b4`/`--b6` IP block, `--n4`/`--n6` IP network, `-u` user, `-g` user group.
 
 ---
+### logs - cli.log
+all command input and output will be saved in cli.log
 
 ## Not a BAM command
 
