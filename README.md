@@ -387,14 +387,6 @@ dnsRole_delete.py -c config1 -v view1 -r master -s dds1
 dnsRole_delete.py -c config1 -v view1 -z test.corp -r master -s dds1
 ```
 
-### server_role.py *(legacy — superseded by `dnsRole_add.py`/`dnsRole_delete.py`)*
-```
-server_role.py -c config1 -v view1 -z test.corp -a -r master -s dds1   # add
-server_role.py -c config1 -v view1 -z test.corp -x -s dds1             # delete
-```
-
----
-
 ## DNS deployment options (forwarding, forwarding policy, ACLs)
 
 All of these scale to config, view, server, or server-group scope via `-s`/`-g`/`-y` (see each script's own flags).
