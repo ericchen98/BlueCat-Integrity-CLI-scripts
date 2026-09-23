@@ -126,6 +126,8 @@ zone_update.py -c config1 -v view1 -z zone1 -n   # set deployable = False
 ```
 a_add.py -c config1 -v view1 -z test.corp -r pc1 -i 10.10.10.3
 a_add.py -c config1 -v view1 -z test.corp -i 10.10.10.3 -k
+
+-k same as zome record (when -k is used, -r is ignored)
 ```
 - `-r` record name, `-i` IP address.
 
@@ -173,8 +175,6 @@ cname_update.py -c config1 -v view1 -z test.corp -r c3 --ni h2.test.corp
 cname_delete.py -c config1 -v view1 -z test.corp -r www -i host.test.corp
 cname_delete.py -c config1 -v view1 -z test.corp -i host.test.corp -k
 ```
-
-**Important (confirmed live):** a CNAME's `-i` target must be a real **HostRecord** (added via `host_add.py`), not a plain A record added via `a_add.py`/`generic_add.py` — pointing at the latter 400s with `InvalidResourceType`.
 
 ---
 
@@ -300,7 +300,6 @@ naptr_query.py -c config1 -v view1 -z test.corp -r naptr1
 ```
 naptr_update.py -c config1 -v view1 -z test.corp -r naptr1 -g S -o 100 -p 10 -e '!^.*$!sip:user@sip.rfc1035.com!' -t test1.MNC001.MCC700.gprs. -s x-3gpp-pgw:x-gp:x-gn --ng S --no 999 --np 10 --ne '!^.*$!sip:user@sip.rfc1035.com!' --nt test1.MNC001.MCC700.gprs. --ns x-3gpp-pgw:x-gp:x-gn
 ```
-- Same "every field needs its `--n*` counterpart" rule as `srv_update.py` — omitting one (e.g. `--nt`) blanks that field, which the server will reject (e.g. an empty `replacement` fails FQDN validation).
 
 ### naptr_delete.py
 ```
