@@ -32,8 +32,8 @@ In BAM, create a API user with correct access right.
 
 **Most critical items are:**<br>
   **"hostname"**             : The IP address or FQDN of your BAM<br>
-  **"user"**                 : this is the api user name you created in BAM<br>
-  **"password"**             : put your encrypted password here<br>
+  **"user"**                 : this is the api user you created in BAM<br>
+  **"password"**             : put your encrypted password here if password_encrypt = "true"<br>
   **"password_encrypt"**     : ["true" or "false"] - "true" means the "password" is encrypted.<br>
   **"https"**               : ["true" or "false"] - whether the scipt should use https to connect to BAM<br><br>
    Rest of the fileds are used for some special scripts (for example RPZ update scripts).<br>
