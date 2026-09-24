@@ -79,7 +79,6 @@ from	ns_add                   import *
 from	ns_delete                import *
 from	ns_query                 import *
 from	ns_update                import *
-from	server_role              import *
 from    server_query             import *
 from	srv_add                  import *
 from	srv_delete               import *
@@ -129,7 +128,7 @@ help_text = '''
    access-rights    : add/remove user access right 
 [---Server management---]   
    deploy-server 
-   server-query             server-role
+   server-query
 [---Configuration/View/Zone management ---]
          config-add         config-query   
            view-add           view-query          view-update
@@ -275,7 +274,6 @@ matchClient-update : Update a matchClient to a view
 
 help_server = '''
 server-query  : query one or all BDDS servers setting of a config
-server-role   : add/delete server deploy roles(master,slave) to a view/zone
 deploy-server : deploy a BDDS server
 deploy-status : get the deploy status of a BDDS server
 '''
@@ -667,11 +665,6 @@ def cli(*args):
         #----------------------------------------       
         if input_cmd == 'server-query'.lower():
             rtn = server_query( *arg_list )
-            cmd_found = True
-
-        #----------------------------------------       
-        if input_cmd == 'server-role'.lower():
-            rtn = server_role( *arg_list )
             cmd_found = True
 
         #----------------------------------------       
