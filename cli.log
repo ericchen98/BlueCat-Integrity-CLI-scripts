@@ -12,3 +12,8 @@
 2026-09-16 13:10:36,user1,bluecat,,cli,View,"[INFO]:Success: Found record a1.test.corp "," Input: a_query -c config1 -v view1 -z test.corp -r a1 --debug api"
 2026-09-16 13:14:55,user1,bluecat,,cli,View,"[INFO]:Success: Found record a1.test.corp "," Input: a_query -c config1 -v view1 -z test.corp -r a1"
 2026-09-16 13:55:27,user1,bluecat,,cli,View,"[INFO]:Success: Found record a1.test.corp i:1.1.1.1 "," Input: a_query -c config1 -v view1 -z test.corp -r a1"
+2026-09-24 12:43:31,hchen,bluecat,,cli,View,"[INFO]:Success: Found record a1.test.corp i:1.1.1.1  Input: a-query -c config1 -v view1 -z test.corp -r a1
+2026-09-24 17:26:29,hchen,bluecat,,cli,Add,"[ERROR]:Failure: -p macPool option is required Input: macPool-query -c config1
+2026-09-24 17:26:39,hchen,bluecat,,cli,Add,"[ERROR]:Failure: -p macPool option is required Input: macPool-query -c config1
+2026-09-24 17:26:47,hchen,bluecat,,cli,Add,"[ERROR]:Failure: Failed to find view: macPool1 Input: macPool-query -c config1 -p macPool1
+2026-09-24 17:31:35,hchen,bluecat,,cli,Add,"[ERROR]:[ResourceAlreadyExists] The request attempted to create a resource that already exists (Duplicate of another item) Input: config-add -c config1

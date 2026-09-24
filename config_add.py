@@ -27,7 +27,7 @@
 #       - use print_log class in BAM.py
 #       - use pw in BAM
 '''
-add-conf -c config1
+config-add -c config1
 
 # add a configuration to BAM
 '''
